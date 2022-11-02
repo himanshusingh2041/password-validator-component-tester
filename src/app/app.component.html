@@ -1,0 +1,9 @@
+<div class="m-3 w-25" [formGroup]="formGroup">
+  <password-validator-component
+    [validatorFromGroup]="formGroup"
+  ></password-validator-component>
+
+  <button mat-raised-button color="primary" (click)="showResult()" class="mt-3">
+    Submit
+  </button>
+</div>
